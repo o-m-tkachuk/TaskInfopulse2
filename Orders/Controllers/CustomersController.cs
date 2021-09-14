@@ -40,6 +40,7 @@ namespace Orders.Controllers
         public IActionResult Create(Customer customer)
         {
             //another comment
+            //one more comment
             _customerRepository.Add(customer);
             return CreatedAtAction(nameof(GetById),
                 new { id = customer.CustomerId },
